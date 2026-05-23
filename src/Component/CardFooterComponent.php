@@ -2,9 +2,9 @@
 
 namespace Lagdo\UiBuilder\DaisyUi\Component;
 
-use Lagdo\UiBuilder\Component\Base\PanelHeaderComponent as BaseComponent;
+use Lagdo\UiBuilder\Component\Base\CardFooterComponent as BaseComponent;
 
-class PanelHeaderComponent extends BaseComponent
+class CardFooterComponent extends BaseComponent
 {
     /**
      * @return void
@@ -12,7 +12,8 @@ class PanelHeaderComponent extends BaseComponent
     protected function onCreate(): void
     {
         // Not implemented in DaisyUi. See https://tw-elements.com/docs/standard/components/cards/.
-        $this->element()->addClass('border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10');
+        $this->element()->addClass('border-t-2 border-neutral-100 px-6 py-3 ' .
+            'text-surface/75 dark:border-white/10 dark:text-neutral-300');
     }
 
     /**
